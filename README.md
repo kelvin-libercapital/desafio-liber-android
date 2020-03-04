@@ -1,22 +1,30 @@
 # desafio-android
 
 ## O Aplicativo:
-O objetivo deste aplicativo é fazer batalhas entre personagens da cultura pop no geral usando a api [SuperHero](superheroapi.com). Com uma tela que mostra todos os atributos dos personagens e outra para seleciona-los.
+O objetivo deste aplicativo é simular batalhas entre dois personagens da cultura pop usando informações da API [SuperHero](superheroapi.com), onde o personagem com a melhor média de `powerstat` será o vencedor de um confronto, seguindo a seguinte regra:
+- intelligence: peso 8
+- strength: peso 3,
+- speed: peso 3,
+- durability: peso 3,
+- power: peso 5,
+- combat: peso 3
+  
+O projeto já conta com uma tela para exibir a batalha e outra tela em que você pode selecionar os participantes que participarão do confronto.
 
 ## Como enviar a sua solução:
 
-Faça um fork desse projeto em sua conta pessoal. Ao terminar o desafio, coloque um apk no seu repositório para testarmos, abra uma issue nesse repositório contendo um link para seu repositório.
+Faça um fork desse projeto em sua conta pessoal. Ao terminar o desafio, coloque um apk no seu repositório e abra uma issue nesse repositório contendo um link para a sua solução.
 
-## Requisitos obrigatórios para cumprir o desafio:
+## Requisitos obrigatórios para a entrega do projeto:
 
-* Tratar erros da api;
-* Exibir o vencedor da batalha;
-* Melhorar custom view de busca;
-* Adicionar injeção de dependências.
+* Tratar erros de funcionalidade do aplicativo;
+* Tratar erros de resposta da API do SuperHero;
+* Exibir o vencedor de uma batalha;
+* Melhorar o design da custom view;
 
 ## Modificações que serão um diferencial:
 
-* Melhorias gerais de código;
-* Testes;
+* Utilizar injeção de dependências;
+* Melhorias gerais de código e arquitetura do projeto;
+* Testes automatizados;
 * Animações;
-* Melhorias na arquitetura.
