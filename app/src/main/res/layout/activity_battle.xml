@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.battle.BattleActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/firstCharacterContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/firstPickHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/select_the_first_character_hint"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/firstCharacterInfos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="invisible"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/firstImage"
+                android:layout_width="120dp"
+                android:layout_height="160dp" />
+
+            <TextView
+                android:id="@+id/firstAttributes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.3"
+                tools:text="Name:\nIntelligence:\nStrength:\nSpeed:\nDurability:\nPower:\nCombat:" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/secondCharacterContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstCharacterContainer">
+
+        <TextView
+            android:id="@+id/secondPickHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/select_the_second_character_hint"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/secondCharacterInfos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="invisible"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/secondImage"
+                android:layout_width="120dp"
+                android:layout_height="160dp" />
+
+            <TextView
+                android:id="@+id/secondAttributes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.3"
+                tools:text="name:\nIntelligence:\nStrength:\nSpeed:\nDurability:\nPower:\nCombat:" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/resultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/result_title"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/winnerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondCharacterContainer" />
+
+    <ImageView
+        android:id="@+id/winnerImage"
+        android:layout_width="140dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toTopOf="@id/winnerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultTitle"
+        tools:src="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/winnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/winnerImage"
+        tools:text="Winner Name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

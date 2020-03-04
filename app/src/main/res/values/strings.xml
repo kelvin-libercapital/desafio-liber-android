@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DeathBattle</string>
+    <string name="search_bar_hint">Search</string>
+    <string name="character_infos">Name: %s\nGender: %s\nRace: %s\nAlignment: %s\nPublisher: %s</string>
+    <string name="character_attributes">Name: %s\nIntelligence: %d\nStrength: %d\nSpeed: %d\nDurability: %d\nPower: %d\nCombat: %d</string>
+    <string name="result_title">Result:</string>
+    <string name="select_the_first_character_hint">Select the first character</string>
+    <string name="select_the_second_character_hint">Select the second character</string>
+</resources>
