@@ -20,9 +20,3 @@ Faça um fork desse projeto em sua conta pessoal. Ao terminar o desafio, coloque
 * Testes;
 * Animações;
 * Melhorias na arquitetura.
-
-## O que será avaliado:
-
-* Lógica na solução dos problemas;
-* Maturidade com a linguagem Kotlin;
-* Habilidade de melhorar código alheio.
