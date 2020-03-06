@@ -13,7 +13,7 @@ O projeto já conta com uma tela para exibir a batalha e outra tela em que você
 
 ## Como enviar a sua solução:
 
-Faça um fork desse projeto em sua conta pessoal. Ao terminar o desafio, coloque um apk no seu repositório e abra uma issue nesse repositório contendo um link para a sua solução.
+Faça um fork desse projeto em sua conta pessoal e adicione a sua API key no arquivo [build.gradle](https://github.com/libercapital/desafio-liber-android/blob/master/app/build.gradle). Ao terminar o desafio, coloque um apk no seu repositório e abra uma issue nesse repositório contendo um link para a sua solução.
 
 ## Requisitos obrigatórios para a entrega do projeto:
 
