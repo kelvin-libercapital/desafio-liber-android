@@ -17,7 +17,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "WS_BASE_URL", '"https://superheroapi.com/api/"'
-        buildConfigField "String", "WS_API_KEY", '"2986223054750769"'
+        buildConfigField "String", "WS_API_KEY", '"YOUR API KEY HERE"'
     }
 
     buildTypes {
